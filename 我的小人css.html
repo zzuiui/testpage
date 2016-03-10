@@ -1,0 +1,196 @@
+<style type="text/css">
+    .body{
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper{
+        width: 300px;
+        margin:100px auto;
+    }
+    .litteH{
+        position: relative;
+    }
+    .headH{
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        border:5px solid #000;
+        border-radius: 115px;
+        background: #fff;
+        overflow: hidden;
+        z-index: 2;
+    }
+    .eyebrow{
+        position: relative;
+        z-index: 3;
+    }
+    .eyebrow_left{
+        width: 60px;
+        height: 0px;
+        border-radius: 85px;
+        border:5px solid #000;
+        background: #fff;
+        position: absolute;
+        top:60px;
+        left: 33px;
+        -webkit-transform:rotate(30deg);
+    }
+    .eyebrow_right{
+        width: 60px;
+        height: 0px;
+        border:5px solid #000;
+        background: #fff;
+        position: absolute;
+        border-radius: 85px;
+        top:60px;
+        left: 133px;
+        -webkit-transform:rotate(-30deg);
+    }
+    .eyelid{
+        position: relative;
+        z-index: 3;
+    }
+    .eyelid_left{
+        width: 60px;
+        height: 0px;
+        border-radius: 85px;
+        border:3px solid #000;
+        background: #fff;
+        position: absolute;
+        top:100px;
+        left: 33px;
+        
+    }
+    .eyelid_right{
+        width: 60px;
+        height: 0px;
+        border:3px solid #000;
+        background: #fff;
+        position: absolute;
+        border-radius: 85px;
+        top:100px;
+        left: 133px;
+        
+    }
+    .eyeball{
+        position: relative;
+        z-index: 3;
+    }
+    .eyeball_left{
+        width: 20px;
+        height: 10px;
+        border-radius: 85px;
+        border:3px solid #000;
+        background: #000;
+        position: absolute;
+        top:100px;
+        left: 33px;
+        -webkit-animation:move_eyeball_left 3s infinite;
+    }
+    .eyeball_right{
+        width: 20px;
+        height: 10px;
+        border:3px solid #000;
+        background: #000;
+        position: absolute;
+        border-radius: 85px;
+        top:100px;
+        left: 133px;
+        -webkit-animation:move_eyeball_right 3s infinite; 
+    }
+    }
+    .face{
+        position: relative;
+        z-index: 3;
+    }
+    .face_left{
+        width: 60px;
+        height: 40px;
+        border-radius: 30px;
+        border:0px solid #000;
+        background: #EB7148;
+        position: absolute;
+        top:120px;
+        left: 33px;
+    }
+    .face_right{
+        width: 60px;
+        height: 40px;
+        border:0px solid #000;
+        background: #EB7148;
+        position: absolute;
+        border-radius: 30px;
+        top:120px;
+        left: 138px;
+    }
+    .mouth{
+        position: relative;
+    }
+    .mouth .mouth_shape{
+        width: 35px;
+        height: 15px;
+        border:5px solid #000;
+        border-bottom-left-radius: 30px;
+        background: #fff;
+        position: absolute;
+        top:175px;
+        left:98px;
+        z-index: 2;
+        -webkit-transform:rotate(-35deg);
+    }
+    .mouth .mouth_shape:after{
+        content: '';
+        width: 52px;
+        height: 25px;
+        background: #fff;
+        border-top-right-radius: 10px;
+        position: absolute;
+        top:-14px;
+        left:-3px;
+        -webkit-transform:rotate(34deg);
+    }
+    @-webkit-keyframes move_eyeball_left {
+        from {
+            left:33px;
+        }
+        to {
+            left:73px;
+        }
+        
+    }
+    @-webkit-keyframes move_eyeball_right {
+        from {
+            left:133px;
+        }
+        to {
+            left:173px;
+        }
+        
+    }
+</style>
+<div class="wrapper"><!-- 容器 -->
+    <div class="littleH"><!-- 小黄人 -->
+        <div class="headH"><!-- 身体 -->
+            <div class="eyebrow"> <!--眉毛-->
+                <div class="eyebrow_left"></div><!-- 左眉毛 -->
+                <div class="eyebrow_right"></div><!-- 右眉毛 -->
+            </div>
+            <div class="eyelid"> <!--眼皮-->
+                <div class="eyelid_left"></div><!-- 左眼皮 -->
+                <div class="eyelid_right"></div><!-- 右眼皮 -->
+            </div>
+            <div class="eyeball"> <!--眼珠-->
+                <div class="eyeball_left"></div><!-- 左眼珠 -->
+                <div class="eyeball_right"></div><!-- 右眼珠 -->
+            </div>
+            <div class="face"> <!--脸-->
+                 <div class="face_left"></div><!-- 脸 -->
+                <div class="face_right"></div><!-- 脸 -->
+            </div>
+            <div class="mouth"><!-- 嘴巴 -->
+                <div class="mouth_shape"></div>
+            </div>
+        </div>
+        
+    </div>
+ </div>
